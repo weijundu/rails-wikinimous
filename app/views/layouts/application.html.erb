@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="heading">
+        <%= link_to "Wikinimous", articles_path, class: "wiki"%>
+        <%= link_to "New articles", new_article_path %>
+    </div>
+    <div class = "wrapper">
+      <%= yield %>
+    </div>
   </body>
 </html>
